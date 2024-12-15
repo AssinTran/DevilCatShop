@@ -1,6 +1,6 @@
 ﻿namespace DataAccess
 {
-    public class DAO<T> where T : class, new()
+    public abstract class DAO<T> where T : class, new()
     {
         private static T? _instance;
         private static readonly object _lock = new object();
